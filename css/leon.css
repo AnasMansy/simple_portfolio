@@ -1,0 +1,53 @@
+*{
+    border-radius: 12px;
+}
+body{
+    background-color: rgb(110, 110, 218);
+   display: flex;
+   flex-wrap: wrap;
+
+  
+}
+
+section{
+    background-color: rgb(100, 78, 221);
+    margin: 200px auto 0 auto;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    position: relative;
+}
+section:hover{
+    height: 350px;
+    transition: all .5s;
+    background-color: white;
+}
+
+.im{
+    width: 300px;
+    border-radius: 15%;
+    position: absolute;
+    left: 50px;
+    top: -50px;
+transition:  all .5s;
+z-index: 1;
+}
+h1,p1{
+    color: rgb(29, 29, 238);
+}
+.d{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+section:hover .d{
+    opacity: 1;
+   
+}
+section:hover .im{
+    top:-100px;
+    transform: rotate(720deg);
+    border-radius: 50%;
+
+}
